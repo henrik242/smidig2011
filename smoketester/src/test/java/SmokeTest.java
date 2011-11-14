@@ -25,6 +25,6 @@ public class SmokeTest {
 
         String content = EntityUtils.toString(response.getEntity());
 
-        assertThat(content, containsString("woop woop"));
+        assertThat(content, containsString("shoop shoop"));
     }
 }
