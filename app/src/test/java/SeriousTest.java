@@ -20,7 +20,7 @@ public class SeriousTest {
     }
 
     @Test
-    public void shouldNotFail() throws Exception {
+    public void should_see_database_content() throws Exception {
         Statement stat = conn.createStatement();
         ResultSet rs = stat.executeQuery("select message from newsmidig2011;");
         assertEquals("shoop shoop", rs.getString("message"));
