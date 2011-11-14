@@ -21,7 +21,7 @@ public class SmokeTest {
 
     @Test
     public void should_display_front_page() throws IOException {
-        HttpResponse response = client.execute(new HttpGet("http://localhost:9080/index.jsp"));
+        HttpResponse response = client.execute(new HttpGet("http://localhost:9080/smidig2011/index.jsp"));
 
         String content = EntityUtils.toString(response.getEntity());
 
