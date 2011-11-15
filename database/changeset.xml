@@ -18,5 +18,19 @@
         <column name="message" value="woop woop"/>
      </insert>
   </changeSet>
+
+  <changeSet id="add-testing-table-2" author="smat">
+    <createTable tableName="newsmidig2011">
+       <column name="id" type="varchar(40)"/>
+       <column name="message" type="varchar(200)"/>        
+    </createTable>
+  </changeSet>
+  <changeSet id="add-some-data-2" author="smat">
+    <insert tableName="newsmidig2011">
+        <column name="id" value="1"/>
+        <column name="message" value="shoop shoop"/>
+     </insert>
+  </changeSet>
+
 </databaseChangeLog>
 

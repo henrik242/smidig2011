@@ -22,8 +22,8 @@ public class SeriousTest {
     @Test
     public void should_see_database_content() throws Exception {
         Statement stat = conn.createStatement();
-        ResultSet rs = stat.executeQuery("select message from smidig2011;");
-        assertEquals("woop woop", rs.getString("message"));
+        ResultSet rs = stat.executeQuery("select message from newsmidig2011;");
+        assertEquals("shoop shoop", rs.getString("message"));
         rs.close();
     }
 
